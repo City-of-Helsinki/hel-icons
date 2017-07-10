@@ -62,7 +62,7 @@ module.exports = function(grunt) {
       },
     },
     // Deploy preview page to gh-pages
-    'gh-pages': {
+    gh-pages: {
         options: {
           base: 'dist/symbol'
         },
@@ -74,6 +74,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-svg-sprite');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   // Default task(s).
   grunt.registerTask('default', ['svg_sprite']);
