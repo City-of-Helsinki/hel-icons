@@ -1,6 +1,6 @@
 {
   "name": "hel-icons",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "City of Helsinki icon library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -13,7 +13,17 @@ you only need hel-icons.svg file.
 
 Insert icon in inline content.
 ```
-<svg aria-hidden="true"><use xlink:href="path-to/dist/symbol/svg/hel-icons.svg#book"></use></svg>
+<svg aria-hidden="true" class="icon"><use xlink:href="path-to/dist/symbol/svg/hel-icons.svg#book"></use></svg>
+```
+
+To make sure icons appear correct size depending on context include this default to styles 
+```
+<style>
+  .icon {
+    width:1em;
+    height:1em
+  }
+</style>
 ```
 
 ## Accessibility

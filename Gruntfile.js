@@ -1,22 +1,24 @@
 'use strict';
 
-var baseDir  = 'src',
+var baseDir  = 'src/svg',
 svgGlob      = '**/*.svg',
 outDir       = 'dist',
 SVGconfig    = {
           "mode": {
             "symbol": {		// Activate the «css» mode
               "sprite": 'svg/hel-icons.svg',
-              "render": {
-                "css"	: true,	// Activate CSS output (with default options)
-                "scss"	: true	// Activate SASS output (with default options)
-              },
               "example": {
                 "template": 'tmpl/symbol/sprite.html',
                 "dest": 'index.html',
               },
-            }
-          }
+            },
+          },
+          "shape" : {
+            dest: "shapes"
+          },
+          "svg": {
+            "dimensionAttributes" : false
+          },
         };
 
 module.exports = function(grunt) {
@@ -42,12 +44,9 @@ module.exports = function(grunt) {
       }
     },
     svg_sprite: {
-      options: {
-        // Task-specific options go here.
-      },
-      your_target: {
+      spriter: {
         expand: true,
-        cwd: 'src',
+        cwd: baseDir,
         src: [svgGlob],
         dest: outDir,
         options: SVGconfig
@@ -62,7 +61,7 @@ module.exports = function(grunt) {
       },
     },
     // Deploy preview page to gh-pages
-    gh-pages: {
+    "gh-pages": {
         options: {
           base: 'dist/symbol'
         },
