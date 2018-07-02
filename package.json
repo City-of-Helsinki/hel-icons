@@ -1,13 +1,13 @@
 {
   "name": "hel-icons",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "City of Helsinki icon library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name": "Tero Tikkanen",
-    "email": "tero.tikkanen@hel.fi",
+    "name": "City of Helsinki",
+    "email": "dev@hel.fi",
     "url": "http://dev.hel.fi/"
   },
   "repository": {
