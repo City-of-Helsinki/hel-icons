@@ -5,7 +5,7 @@ City of Helsinki brand identity icon set.
 ## Installation
 
 ```
-npm install hel-svg-icons
+npm install hel-icons
 ```
 you only need hel-icons.svg file.
 
